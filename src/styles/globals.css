@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(226, 232, 240, 0.8);
+  }
+  
+  body {
+    background-color: #F4F7FC;
+    min-height: 100vh;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Solid Clean Surface Panels (Taking Full Space) */
+  .glass-panel {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+  }
+
+  .glass-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+  }
+
+  .glass-pill {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+  }
+
+  .glass-subcard {
+    background-color: #F8FAFC;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  /* Micro Label System */
+  .micro-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748B;
+  }
+
+  .micro-label-white {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  /* Notched Passport Cards */
+  .passport-ticket {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px -4px rgba(15, 23, 42, 0.06);
+  }
+
+  .passport-notch-left {
+    position: absolute;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #F4F7FC;
+  }
+
+  .passport-notch-right {
+    position: absolute;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #F4F7FC;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1D64EC;
+}
