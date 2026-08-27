@@ -10,6 +10,8 @@ dist
 dist/
 dist-ssr
 build/
+.vite
+.vite/
 
 # Python
 __pycache__/
